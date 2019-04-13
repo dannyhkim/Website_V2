@@ -253,6 +253,13 @@ a{
 }
 
 @media(max-width: 540px) {
+    h1 {
+        font-size: 50px;
+    }
+    .bodytext {
+        font-size: 18px;
+        line-height: 30px;
+    }
     textstyle {
         color: #000;
         background-color: #fff;
