@@ -95,9 +95,9 @@ nav ul{
     overflow: hidden;
     color: #fff;
     margin:0;
-    padding:0;
     text-align: right;
     padding-right: 50px;
+    transition: 1s;
 }
 nav ul li {
     display: inline-block;
@@ -180,52 +180,47 @@ a{
     }
 }
 @media(max-width: 540px) {
-
-/* DON'T TOUCH */
-    .logo {
-          position: fixed;
-          top: 0;
-          margin-top: 16px;
-          color:#fff;
-    }
-    nav {
-        background: #000;
-    }
-    nav ul {
-        max-height: 0px;
-        background: #000;
-        transition: 1s;
-    }
-    nav.black {
-        background:#000;
-        height: 90px;
-    }
-    nav.black .logo {
-        margin-top: 16px;
-    }
-    nav.black ul {
-          background: #000;
-    }
-    nav.black ul li {
-        width: 100%;
-        padding: 20px 100px;
-    }
-    .showing {
-          max-height: 34em;
-    }
-
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 20px 100px;
-        text-align: center;
-    }
-
-    nav ul li a {
-        color:#fff;
-    }
-
-    .menu-icon {
-          display: block;
-    }
+/* TOGGLE MENU */
+.logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+    color:#fff;
+}
+nav {
+    background: #000;
+}
+nav ul {
+    max-height: 0px;
+    background: #000;
+}
+nav.black ul {
+    background: #000;
+}
+.showing {
+    max-height: 20em;
+}
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 100px;
+    text-align: center;
+}
+nav ul li a {
+    color:#fff;
+}
+nav.black {
+    background:#000;
+    height: 90px;
+}
+nav.black .logo {
+    margin-top: 16px;
+}
+nav.black ul li {
+    width: 100%;
+    padding: 5px 100px;
+}
+.menu-icon {
+      display: block;
+}
 }
