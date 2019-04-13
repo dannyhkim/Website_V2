@@ -1,0 +1,122 @@
+<!-- Daniel Kim's website coded from scratch :) -->
+<!DOCTYPE html>
+<html class="gr_danielkim_tech" lang="en">
+    
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width,initial-scale=1">
+    <title>Daniel Kim</title>
+    <meta name="keywords" content="daniel kim, systems design engineering, design, ui/ux, waterloo, syde, software developer, cibc">
+    <meta name="description" content="aspiring software developer and designer studying Systems Design Engineering at the University of Waterloo.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap JS -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="Assets/Favicon.png">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/project.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Assistant" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+    <!-- jQuery Sticky Nav Bar-->
+    <script 
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous">
+    </script>
+    <script type="text/javascript">
+        //Scrolling effect
+        $(window).on("scroll", function(){
+            if($(window).scrollTop()){
+                $('nav').addClass('black');
+            }else{
+                $('nav').removeClass('black');
+            }
+    })
+    //Hamburger menu btn
+    $(document).ready(function() {
+            $(".menu-icon").on("click", function() {
+                $("nav ul").toggleClass("showing");
+            });
+        });
+    </script>
+    
+</head>
+    
+<body data-gr-c-s-loaded="true">
+<!-- NavBar -->
+<nav>
+    <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+    </div>
+    
+    <div class="logo">
+        <a class="link" href="index.html">DANIEL</a>
+    </div>
+    
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Work</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="Assets/DanielKimResume.pdf" target="_blank">Résumé</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="wrapper">
+    <div class="row">
+    <div class="img-wrap">
+        <img class="img-style" src="Assets/ShootEmUpMockup.jpg">
+    </div>
+    <div class="content">
+        <div class="title">
+            <h1>Shoot 'Em Up</h1>
+        </div>
+        <div class="col-1">
+            <h2>OVERVIEW</h2>
+            <p class="body-text">Shoot 'Em Up is a shooter genre game developed using several classes and OOP principles to generate the automated movement of the CPU enemies and bullets. I was able to implement a GUI and various methods to keep track of player lives, points, and an end game scenario. The game was also develpped with an algorithm prompting the enemy bots’ bullets to follow and target the player’s movement.</p>
+        </div>
+        <div class="col-2">
+            <h2>ROLE</h2>
+            <p class="body-text">Developer</p>
+            <br>
+            <h2>TOOLS</h2>
+            <p class="body-text">Java</p>
+        </div>
+    </div>
+    </div>
+    <div class="btn-align">
+            <a class="btn-style" href="https://github.com/dannyhkim/Shoot_Em_Up" target="_blank">View on GitHub</a>
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="effect">
+        <a class="iconbtn fas fa-envelope" href="mailto:dh55kim@uwaterloo.ca?Subject=Hello%20again" target="_blank">
+        </a>
+        <a class="iconbtn fab fa-github" href="https://github.com/dannyhkim" target="_blank">
+        </a>
+        <a class="iconbtn fab fa-linkedin-in" href="https://www.linkedin.com/in/danielkim2000/" target="_blank">
+        </a>
+    </div>
+    <p>Daniel Kim &copy; 2019</p>
+</footer>
+
+</body>
+
+
+</html>

@@ -1,0 +1,262 @@
+html, body, h2, h3 {
+    margin:0;
+    padding:0;
+    width:100%;
+    font-family: 'Quicksand', 'Roboto', 'Ubuntu', 'PT Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h1 {
+    font-family: 'Nunito', sans-serif;
+    font-size: 50px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+h2 {
+    font-family: 'Roboto';
+    font-size: 20px;
+    color: #666666;
+    letter-spacing: 1.5px;
+}
+.wrapper {
+    padding-top: 5em;
+}
+.row {
+    margin-bottom: 10px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-style {
+    width: 100%;
+}
+.img-wrap {
+    margin: 0;
+}
+.content {
+    margin: 2em 6% 3em 6%;
+}
+.title {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.col-1 {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.col-2 {
+    margin-top: 20px;
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.wide-container {
+    position: relative;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+    float: left;
+}
+.body-text {
+    font-family: 'Quicksand';
+    font-size: 17px;
+    line-height: 30px;
+}
+.btn-align {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 5em;
+}
+.btn-style {
+    border: 1px solid black;
+    color: #000;
+    transition-duration: 0.4s;
+    font-size: 20px;
+    font-family: 'Assistant', sans-serif;
+    padding: 10px 20px 10px 20px;
+    border-radius: 4px;
+}
+.btn-style:hover{
+    background: black;
+    color: white;
+}
+
+/* Sticky Nav Bar */
+.logo{
+    line-height: 60px;
+    font-family: 'Quicksand';
+    position: fixed;
+    float: left;
+    margin: 16px 0 0 6%;
+    padding-left: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.menu {
+    font-family: 'Quicksand';
+    font-size:20px;
+    float:right;
+}
+nav{
+    position: fixed;
+    width:100%;
+    line-height: 60px;
+    transition:0.5s;
+    z-index: 2;
+}
+nav ul{
+    line-height: 60px;
+    list-style:none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #fff;
+    margin:0;
+    padding:0;
+    text-align: right;
+    padding-right: 50px;
+}
+
+nav ul li {
+    display: inline-block;
+    padding:16px 15px; /* spacing between nav bar menu options*/
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.menu-icon {
+    width: 100%;
+    line-height:60px;
+    background: rgba(0,0,0,0.9);
+    text-align:right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+nav.black{
+    transition-timing-function: 0.3s;
+    font-size: 16px;
+    height: 70px;
+    background: rgba(0,0,0,0.9);
+    color: #fff;
+}
+nav.black .logo{
+    color: #fff;
+    margin-top: 7px;
+}
+nav.black ul li {
+    padding: 7px 15px;
+}
+nav.black ul li a{
+    color:#fff;
+}
+nav.black a {
+    color:#fff;
+}
+a{
+    color:#4cb69f;
+    text-decoration:none;
+}
+.link {
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+    color: #006400;
+    color: #4cb69f; 
+}
+.link:hover { 
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+    color: #006400;
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(30%);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@media (min-width: 768px) {
+    .col-1 {
+        width: 60%;
+        float: left;
+    }
+    .col-2 {
+        width: 40%;
+        float: left;
+    }
+}
+
+@media(max-width: 540px) {
+/* DON'T TOUCH */
+    .logo {
+          position: fixed;
+          top: 0;
+          margin-top: 16px;
+          color:#fff;
+    }
+    nav {
+        background: #000;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+        transition: 1s;
+    }
+    nav.black {
+        background:#000;
+        height: 90px;
+    }
+    nav.black .logo {
+        margin-top: 16px;
+    }
+    nav.black ul {
+          background: #000;
+    }
+    nav.black ul li {
+        width: 100%;
+        padding: 20px 100px;
+    }
+    .showing {
+          max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 20px 100px;
+        text-align: center;
+    }
+
+    nav ul li a {
+        color:#fff;
+    }
+
+    .menu-icon {
+          display: block;
+    }
+    .wrapper {
+        padding-top: 90px;
+    }
+}

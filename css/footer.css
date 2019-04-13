@@ -1,0 +1,50 @@
+/*Footer btn styling*/
+footer{
+    position: absolute;
+    width: 100%;
+    font-family: 'Quicksand', sans-serif;
+    text-align: center;
+    padding: 20px 0px 10px 0px;
+    background-color: #000;
+    color: #fff;
+}
+.iconbtn {
+    width: 60px;
+    height: 60px;
+    text-decoration: none;
+    margin: 5px;
+    position: relative;
+    color: #fff;
+}
+.iconbtn::before {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.iconbtn::after {
+    background: #fff;
+    transition: 0.2s;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 50%;
+    z-index: 0;
+}
+.effect .iconbtn {
+    border-radius: 50%;
+    border: 3px solid #fff;
+    color: #000;
+}
+.effect .iconbtn::after {
+    background: #fff;
+    transition: 0.2s;
+}
+.effect .iconbtn:hover::after {
+    transform: scale(.9);
+}
