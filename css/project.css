@@ -89,6 +89,9 @@ h2 {
     background: black;
     color: white;
 }
+.bottom-padding {
+    margin-bottom: 60px;
+}
 
 /* Sticky Nav Bar */
 .logo{

@@ -131,6 +131,7 @@ nav.black a {
     font-family: 'Quicksand';
     font-size:24px;
     line-height: 50px;
+    margin-bottom: 40px;
 }
 .menu {
     font-family: 'Quicksand';
@@ -164,8 +165,7 @@ a{
     margin: 0 6% 4% 6%;
 }
 .row {
-    margin-top: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .col {
     display: inline-block;
