@@ -192,7 +192,7 @@ a{
 
 @keyframes slideInFromBottom {
     0% {
-        transform: translateY(30%);
+        transform: translateY(60%);
         opacity: 0.1;
     }
     100% {
