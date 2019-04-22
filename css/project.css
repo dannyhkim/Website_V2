@@ -213,6 +213,9 @@ a{
 }
 
 @media(max-width: 540px) {
+.body-text {
+    font-weight: normal;
+}
 /* TOGGLE MENU */
 .logo {
     position: fixed;
