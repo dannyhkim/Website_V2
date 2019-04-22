@@ -17,7 +17,9 @@ h4 {
 h1{
     display:block;
     margin:auto;
-    font-family: 'PT Sans';
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-style: normal;
     font-size: 80px;
     text-align: left;
 }
@@ -28,13 +30,6 @@ h2 {
 header{
     width: 100%;
     font-family: 'Quicksand';
-}
-textstyle {
-    color: #fff;
-    background-color: #4cb69f;
-    padding: 10px;
-    margin-right: 5px;
-    border-radius: 8px;
 }
 teal {
     color: #fff;
@@ -128,10 +123,14 @@ nav.black a {
     margin-right: 6%;
 }
 .bodytext{
-    font-family: 'Quicksand';
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+    font-weight: 200;
     font-size:24px;
     line-height: 50px;
     margin-bottom: 40px;
+}
+textstyle {
+    font-weight: 400;
 }
 .menu {
     font-family: 'Quicksand';

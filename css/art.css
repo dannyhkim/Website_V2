@@ -1,0 +1,244 @@
+html, body, h2, h3 {
+    margin:0;
+    padding:0;
+    height: 100%;
+    font-family: 'Quicksand', 'Roboto', 'Ubuntu', 'PT Sans', sans-serif;
+}
+* {
+    box-sizing: border-box;
+}
+h1{
+    display:block;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-style: normal;
+    margin: auto;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 50px;
+    text-align: left;
+}
+blue{
+    color:#4cb69f;
+}
+.wrapper {
+    padding: 7em 0 0 0;
+    margin: 0 6% 6em 6%;
+}
+.row {
+    display: flex;
+    display: -ms-flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.column {
+    flex: 33.333%;
+    max-width: 33.333%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.column img {
+    margin-top: 20px;
+    vertical-align: middle;
+}
+.title {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.body-text {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    font-weight: 150;
+    font-size: 17px;
+    line-height: 30px;
+    margin-block-start: 0em;
+}
+
+/* Sticky Nav Bar */
+.logo{
+    line-height: 60px;
+    font-family: 'Quicksand';
+    position: fixed;
+    float: left;
+    margin: 16px 0 0 6%;
+    padding-left: 15px;
+    color: #000;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.menu {
+    font-family: 'Quicksand';
+    font-size:20px;
+    float:right;
+}
+nav{
+    position: fixed;
+    width:100%;
+    line-height: 60px;
+    transition:0.5s;
+    z-index: 2;
+}
+nav ul{
+    line-height: 60px;
+    list-style:none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #fff;
+    margin:0;
+    text-align: right;
+    padding-right: 50px;
+    transition: 1s;
+}
+nav ul li {
+    display: inline-block;
+    padding:16px 15px; /* spacing between nav bar menu options*/
+}
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+.menu-icon {
+    width: 100%;
+    line-height:60px;
+    background: rgba(0,0,0,0.9);
+    text-align:right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+nav.black{
+    transition-timing-function: 0.3s;
+    font-size: 16px;
+    height: 70px;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+}
+nav.black .logo{
+    color: #fff;
+    margin-top: 7px;
+}
+nav.black ul li {
+    padding: 7px 15px;
+}
+nav.black ul li a{
+    color:#fff;
+}
+nav.black a {
+    color:#fff;
+}
+a{
+    color:#4cb69f;
+    text-decoration:none;
+}
+.link {
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+    color: #006400;
+    color: #4cb69f; 
+}
+
+.link:hover { 
+    -moz-transition: color .4s ease-in;
+    -o-transition: color .4s ease-in;
+    -webkit-transition: color .4s ease-in;
+    transition: color .4s ease-in;
+    color: #006400;
+}
+@media (min-width: 768px) {
+    .img-col {
+        width: 50%;
+        float: left;
+    }
+    .content {
+        float: left;
+        width: 55%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(30%);
+        opacity: 0.1;
+    }
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+@media(max-width: 540px) {
+h1 {
+    font-size: 40px;
+}
+.column {
+    flex: 100%;
+    -ms-flex: 100%;
+    max-width: 100%;
+}
+/* TOGGLE MENU */
+.logo {
+    position: fixed;
+    top: 0;
+    margin-top: 16px;
+    color:#fff;
+}
+nav {
+    background: #000;
+}
+nav ul {
+    max-height: 0px;
+    background: #000;
+}
+nav.black ul {
+    background: #000;
+}
+.showing {
+    max-height: 20em;
+}
+nav ul li {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 5px 100px;
+    text-align: center;
+}
+nav ul li a {
+    color:#fff;
+}
+nav.black {
+    background:#000;
+    height: 90px;
+}
+nav.black .logo {
+    margin-top: 16px;
+}
+nav.black ul li {
+    width: 100%;
+    padding: 5px 100px;
+}
+.menu-icon {
+      display: block;
+}
+}
