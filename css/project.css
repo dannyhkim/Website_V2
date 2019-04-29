@@ -95,6 +95,10 @@ h2 {
 }
 
 /* Sticky Nav Bar */
+.current {
+    font-weight: bold;
+    color: #009CFF;
+}
 .logo{
     line-height: 60px;
     font-family: 'Quicksand';
@@ -167,6 +171,9 @@ nav.black ul li {
 }
 nav.black ul li a{
     color:#fff;
+}
+nav.black ul li a.current {
+    color: #009CFF;
 }
 nav.black a {
     color:#fff;
