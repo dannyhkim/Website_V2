@@ -8,7 +8,7 @@ html, body, h2, h3 {
     box-sizing: border-box;
 }
 h4 {
-    color: #4cb69f;
+    color: #009CFF;
     font-size: 30px;
     margin-block-start: 0em;
     margin-block-end: 0.5em;
@@ -33,13 +33,13 @@ header{
 }
 teal {
     color: #fff;
-    background-color: #4cb69f;
+    background-color: #009CFF;
     padding: 10px;
     margin-right: 5px;
     border-radius: 8px;
 }
 blue{
-    color:#4cb69f;
+    color:#009CFF;
 }
 /* Scroll Top Button */
 #btnTop {
@@ -88,7 +88,6 @@ nav ul{
     padding-right: 50px;
     transition: 1s;
 }
-
 nav ul li {
     display: inline-block;
     padding: 16px 15px; /* spacing between nav bar menu options*/
@@ -159,8 +158,7 @@ textstyle {
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
-    color: #4cb69f; 
+    color: #009CFF; 
 }
 
 .link:hover { 
@@ -168,10 +166,10 @@ textstyle {
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
+    color: #045E9B;
 }
 a{
-    color:#4cb69f;
+    color:#009CFF;
     text-decoration:none;
 }
 

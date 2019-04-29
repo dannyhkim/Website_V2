@@ -9,7 +9,7 @@ html, body, h2, h3 {
 }
 h1{
     display:block;
-    font-family: 'Roboto';
+    font-family: 'Nunito';
     font-weight: 600;
     font-style: normal;
     margin: auto;
@@ -17,7 +17,14 @@ h1{
     margin-block-end: 0;
     font-size: 50px;
     text-align: left;
-    color: #4cb69f;
+    color: #009CFF;
+}
+h2 {
+    display: block;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-bottom: 10px;
 }
 .wrapper {
     padding: 4em 0 0 0;
@@ -44,10 +51,52 @@ img {
     max-width: 100%;
     height: auto;
 }
+.icon {
+    height: 30px;
+    float: left;
+    padding-right: 10px;
+}
+.award {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.award:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 .img-col {
     position: relative;
     float: left;
     padding-top: 3em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col {
+    padding-top: 1em;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.col ul li {
+    margin-bottom: 20px;
+}
+.col-sm {
+    width: 20%;
+    float: left;
+}
+.col-lg {
+    width: 80%;
+    float: left;
+}
+.header {
+    padding-top: 0.7em;
     padding-left: 15px;
     padding-right: 15px;
 }
@@ -64,8 +113,39 @@ img {
     font-size: 17px;
     line-height: 30px;
 }
+.primary {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+}
+.secondary { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 150;
+    font-size: 17px;
+    line-height: 50px;
+}
+.col-lg p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-left: 30px;
+}
 
-
+/* Scroll Top Button */
+#btnTop {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    z-index: 2;
+    background: rgba(0,0,0,0.9);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
 /* Sticky Nav Bar */
 .logo{
     line-height: 60px;
@@ -143,7 +223,7 @@ nav.black a {
     color:#fff;
 }
 a{
-    color:#4cb69f;
+    color:#009CFF;
     text-decoration:none;
 }
 .link {
@@ -151,8 +231,7 @@ a{
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
-    color: #4cb69f; 
+    color: #009CFF; 
 }
 
 .link:hover { 
@@ -160,7 +239,7 @@ a{
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
+    color: #045E9B;
 }
 @media (min-width: 768px) {
     .img-col {
@@ -170,6 +249,10 @@ a{
     .content {
         float: left;
         width: 55%;
+    }
+    .col {
+        width: 33.33%;
+        float: left;
     }
 }
 @keyframes slideInFromBottom {
@@ -183,53 +266,59 @@ a{
     }
 }
 @media(max-width: 540px) {
-h1 {
-    font-weight: 500;
-}
-.body-text {
-    font-weight: 250;
-}
-/* TOGGLE MENU */
-.logo {
-    position: fixed;
-    top: 0;
-    margin-top: 16px;
-    color:#fff;
-}
-nav {
-    background: #000;
-}
-nav ul {
-    max-height: 0px;
-    background: #000;
-}
-nav.black ul {
-    background: #000;
-}
-.showing {
-    max-height: 20em;
-}
-nav ul li {
-    box-sizing: border-box;
-    width: 100%;
-    padding: 5px 100px;
-    text-align: center;
-}
-nav ul li a {
-    color:#fff;
-}
-nav.black {
-    background:#000;
-    height: 90px;
-}
-nav.black .logo {
-    margin-top: 16px;
-}
-nav.black ul li {
-    width: 100%;
-    padding: 5px 100px;
-}
-.menu-icon {
-      display: block;
-}
+    .secondary {
+        line-height: 25px;
+    }
+    .header {
+        padding-top: 20px;
+    }
+    h1 {
+        font-weight: 600;
+    }
+    .body-text {
+        font-weight: 250;
+    }
+    /* TOGGLE MENU */
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+        color:#fff;
+    }
+    nav {
+        background: #000;
+    }
+    nav ul {
+        max-height: 0px;
+        background: #000;
+    }
+    nav.black ul {
+        background: #000;
+    }
+    .showing {
+        max-height: 20em;
+    }
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 5px 100px;
+        text-align: center;
+    }
+    nav ul li a {
+        color:#fff;
+    }
+    nav.black {
+        background:#000;
+        height: 90px;
+    }
+    nav.black .logo {
+        margin-top: 16px;
+    }
+    nav.black ul li {
+        width: 100%;
+        padding: 5px 100px;
+    }
+    .menu-icon {
+        display: block;
+    }
 }

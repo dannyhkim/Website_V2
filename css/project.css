@@ -172,7 +172,7 @@ nav.black a {
     color:#fff;
 }
 a{
-    color:#4cb69f;
+    color:#009CFF;
     text-decoration:none;
 }
 .link {
@@ -180,15 +180,14 @@ a{
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
-    color: #4cb69f; 
+    color: #009CFF; 
 }
 .link:hover { 
     -moz-transition: color .4s ease-in;
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
+    color: #045E9B;
 }
 
 @keyframes slideInFromBottom {

@@ -9,7 +9,7 @@ html, body, h2, h3 {
 }
 h1{
     display:block;
-    font-family: 'Roboto';
+    font-family: 'Nunito';
     font-weight: 600;
     font-style: normal;
     margin: auto;
@@ -19,7 +19,7 @@ h1{
     text-align: left;
 }
 blue{
-    color:#4cb69f;
+    color:#009CFF;
 }
 .wrapper {
     padding: 7em 0 0 0;
@@ -160,7 +160,7 @@ nav.black a {
     color:#fff;
 }
 a{
-    color:#4cb69f;
+    color:#009CFF;
     text-decoration:none;
 }
 .link {
@@ -168,8 +168,7 @@ a{
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
-    color: #4cb69f; 
+    color: #009CFF; 
 }
 
 .link:hover { 
@@ -177,7 +176,7 @@ a{
     -o-transition: color .4s ease-in;
     -webkit-transition: color .4s ease-in;
     transition: color .4s ease-in;
-    color: #006400;
+    color: #045E9B;
 }
 @media (min-width: 768px) {
     .img-col {
@@ -208,7 +207,7 @@ a{
 @media(max-width: 540px) {
 h1 {
     font-size: 40px;
-    font-weight: 500;
+    font-weight: 600;
 }
 .body-text {
     font-weight: 250;
