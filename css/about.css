@@ -275,6 +275,7 @@ a{
 @media(max-width: 540px) {
     .secondary {
         line-height: 25px;
+        font-weight: 250;
     }
     .header {
         padding-top: 20px;
