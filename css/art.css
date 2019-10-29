@@ -93,7 +93,7 @@ blue{
     font-family: 'Quicksand';
     position: fixed;
     float: left;
-    margin: 16px 0 0 6%;
+    margin: 20px 0 0 6%;
     padding-left: 15px;
     color: #000;
     font-weight: bold;
@@ -152,7 +152,7 @@ nav.black{
 }
 nav.black .logo{
     color: #fff;
-    margin-top: 7px;
+    margin-top: 15px;
 }
 nav.black ul li {
     padding: 7px 15px;
